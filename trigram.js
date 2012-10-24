@@ -26,10 +26,9 @@
 			find : function( phrase ) {
 				var phraseMatches = [];
 				var trigramsInPhrase = 0;
-
 				asTrigrams.call( this, phrase, function( trigram ) {
 					var phrasesForTrigram = this.trigramIndex[trigram];
-					trigramsInPhrase+=1;
+					trigramsInPhrase += 1;
 					if( phrasesForTrigram )
 					for( var j in phrasesForTrigram ) {
 						phraseIndex = phrasesForTrigram[j];
