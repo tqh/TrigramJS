@@ -4,7 +4,7 @@
 
 		function asTrigrams( phrase, callback ) {
 			var rawData = "  ".concat( phrase , "  " );
-			for( var i = rawData.length - 4; i >= 0; i = i - 1 )
+			for( var i = rawData.length - 3; i >= 0; i = i - 1 )
 				callback.call( this, rawData.slice( i, i + 3 ) );
 		};
 
